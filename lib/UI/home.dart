@@ -76,15 +76,14 @@ class _HomeState extends State<Home> {
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(15.0),
                                       border: Border.all(
-                                          color: Color(0xff1e90ff),
-                                          width: 3.0)),
+                                          color: globals.blue, width: 3.0)),
                                   child: Center(
                                     child: Text(
                                       key,
                                       style: TextStyle(
                                           fontSize: 25.0,
                                           fontWeight: FontWeight.bold,
-                                          color: Color(0xff1e90ff)),
+                                          color: globals.blue),
                                     ),
                                   )),
                             ));
@@ -108,11 +107,11 @@ class _HomeState extends State<Home> {
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
                                   border: Border.all(
-                                      color: Color(0xff5F5F5F), width: 3)),
+                                      color: globals.grey, width: 3)),
                               child: TextField(
                                 keyboardType: TextInputType.text,
                                 style: TextStyle(
-                                    color: Color(0xff1e90ff), fontSize: 20.0),
+                                    color: globals.blue, fontSize: 20.0),
                                 decoration: InputDecoration(
                                     hintText: 'New exercise',
                                     hintStyle: TextStyle(fontSize: 20.0)),
@@ -151,14 +150,13 @@ class _HomeState extends State<Home> {
                                         borderRadius:
                                             BorderRadius.circular(15.0),
                                         border: Border.all(
-                                            color: Color(0xff5F5F5F),
-                                            width: 3.0)),
+                                            color: globals.grey, width: 3.0)),
                                     child: Center(
                                       child: Text(
                                         "Add",
                                         style: TextStyle(
                                             fontSize: 25.0,
-                                            color: Color(0xff5F5F5F),
+                                            color: globals.grey,
                                             fontWeight: FontWeight.bold),
                                       ),
                                     )))
@@ -170,14 +168,13 @@ class _HomeState extends State<Home> {
                       padding: EdgeInsets.all(25.0),
                       decoration: BoxDecoration(
                           border: Border(
-                              top: BorderSide(
-                                  width: 2, color: Color(0xff5F5F5F)))),
+                              top: BorderSide(width: 2, color: globals.grey))),
                       child: Center(
                           child: Text(
                         "No internet",
                         style: TextStyle(
                             fontSize: 30.0,
-                            color: Color(0xff1e90ff),
+                            color: globals.blue,
                             fontWeight: FontWeight.bold),
                       )),
                     );
@@ -192,7 +189,7 @@ class _HomeState extends State<Home> {
               "Your exercises",
               style: TextStyle(fontSize: 60.0),
             ),
-            backgroundColor: Color(0xff1e90ff),
+            backgroundColor: globals.blue,
           ),
           body: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -239,15 +236,14 @@ class _HomeState extends State<Home> {
                                         borderRadius:
                                             BorderRadius.circular(15.0),
                                         border: Border.all(
-                                            color: Color(0xff1e90ff),
-                                            width: 3.0)),
+                                            color: globals.blue, width: 3.0)),
                                     child: Center(
                                       child: Text(
                                         key,
                                         style: TextStyle(
                                             fontSize: 40.0,
                                             fontWeight: FontWeight.bold,
-                                            color: Color(0xff1e90ff)),
+                                            color: globals.blue),
                                       ),
                                     )),
                               ));
@@ -267,7 +263,7 @@ class _HomeState extends State<Home> {
                           decoration: BoxDecoration(
                               border: Border(
                                   top: BorderSide(
-                                      width: 5, color: Color(0xff5F5F5F)))),
+                                      width: 5, color: globals.grey))),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
@@ -278,11 +274,11 @@ class _HomeState extends State<Home> {
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
                                     border: Border.all(
-                                        color: Color(0xff1e90ff), width: 3)),
+                                        color: globals.blue, width: 3)),
                                 child: TextField(
                                   keyboardType: TextInputType.text,
                                   style: TextStyle(
-                                      color: Color(0xff1e90ff),
+                                      color: globals.blue,
                                       fontSize: 40.0,
                                       fontWeight: FontWeight.bold),
                                   decoration: InputDecoration(
@@ -323,14 +319,13 @@ class _HomeState extends State<Home> {
                                           borderRadius:
                                               BorderRadius.circular(15.0),
                                           border: Border.all(
-                                              color: Color(0xff1e90ff),
-                                              width: 3.0)),
+                                              color: globals.blue, width: 3.0)),
                                       child: Center(
                                         child: Text(
                                           "Add",
                                           style: TextStyle(
                                               fontSize: 45.0,
-                                              color: Color(0xff1e90ff),
+                                              color: globals.blue,
                                               fontWeight: FontWeight.bold),
                                         ),
                                       )))
@@ -343,14 +338,13 @@ class _HomeState extends State<Home> {
                       padding: EdgeInsets.all(25.0),
                       decoration: BoxDecoration(
                           border: Border(
-                              top: BorderSide(
-                                  width: 5, color: Color(0xff5F5F5F)))),
+                              top: BorderSide(width: 5, color: globals.grey))),
                       child: Center(
                           child: Text(
                         "No internet",
                         style: TextStyle(
                             fontSize: 45.0,
-                            color: Color(0xff1e90ff),
+                            color: globals.blue,
                             fontWeight: FontWeight.bold),
                       )),
                     );
@@ -387,7 +381,7 @@ class _ShowPRState extends State<ShowPR> {
               widget.k,
               style: TextStyle(fontSize: 25),
             ),
-            backgroundColor: Color(0xff1e90ff),
+            backgroundColor: globals.blue,
           ),
           body: ListView(
             children: [
@@ -402,8 +396,7 @@ class _ShowPRState extends State<ShowPR> {
                     height: 200,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20.0),
-                        border:
-                            Border.all(color: Color(0xff5F5F5F), width: 3.0)),
+                        border: Border.all(color: globals.grey, width: 3.0)),
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -447,7 +440,7 @@ class _ShowPRState extends State<ShowPR> {
                                         style: TextStyle(
                                             fontSize: 25.0,
                                             fontWeight: FontWeight.bold,
-                                            color: Color(0xff1e90ff)),
+                                            color: globals.blue),
                                       ))
                                 ],
                               ),
@@ -472,7 +465,7 @@ class _ShowPRState extends State<ShowPR> {
                                         style: TextStyle(
                                             fontSize: 25.0,
                                             fontWeight: FontWeight.bold,
-                                            color: Color(0xff1e90ff)),
+                                            color: globals.blue),
                                       ))
                                 ],
                               ),
@@ -487,8 +480,7 @@ class _ShowPRState extends State<ShowPR> {
                       width: 300,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20.0),
-                          border:
-                              Border.all(color: Color(0xff5F5F5F), width: 3.0)),
+                          border: Border.all(color: globals.grey, width: 3.0)),
                       child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -512,14 +504,13 @@ class _ShowPRState extends State<ShowPR> {
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(10),
                                       border: Border.all(
-                                          color: Color(0xff1e90ff), width: 1)),
+                                          color: globals.blue, width: 1)),
                                   child: TextField(
                                     keyboardType:
                                         TextInputType.numberWithOptions(
                                             decimal: false, signed: false),
                                     style: TextStyle(
-                                        color: Color(0xff1e90ff),
-                                        fontSize: 25.0),
+                                        color: globals.blue, fontSize: 25.0),
                                     decoration: InputDecoration(
                                       hintText: 'weight',
                                     ),
@@ -538,14 +529,13 @@ class _ShowPRState extends State<ShowPR> {
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(10),
                                       border: Border.all(
-                                          color: Color(0xff1e90ff), width: 1)),
+                                          color: globals.blue, width: 1)),
                                   child: TextField(
                                     keyboardType:
                                         TextInputType.numberWithOptions(
                                             decimal: false, signed: false),
                                     style: TextStyle(
-                                        color: Color(0xff1e90ff),
-                                        fontSize: 25.0),
+                                        color: globals.blue, fontSize: 25.0),
                                     decoration:
                                         InputDecoration(hintText: 'reps'),
                                     onChanged: (String value) {
@@ -595,15 +585,14 @@ class _ShowPRState extends State<ShowPR> {
                                         borderRadius:
                                             BorderRadius.circular(15.0),
                                         border: Border.all(
-                                            color: Color(0xff1e90ff),
-                                            width: 3.0)),
+                                            color: globals.blue, width: 3.0)),
                                     child: Center(
                                       child: Text(
                                         "Update PR",
                                         style: TextStyle(
                                             fontSize: 20.0,
                                             fontWeight: FontWeight.bold,
-                                            color: Color(0xff1e90ff)),
+                                            color: globals.blue),
                                       ),
                                     )))
                           ]),
@@ -627,7 +616,7 @@ class _ShowPRState extends State<ShowPR> {
             widget.k,
             style: TextStyle(fontSize: 60.0),
           ),
-          backgroundColor: Color(0xff1e90ff),
+          backgroundColor: globals.blue,
         ),
         body: ListView(
           children: [
@@ -642,7 +631,7 @@ class _ShowPRState extends State<ShowPR> {
                   height: 300,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20.0),
-                      border: Border.all(color: Color(0xff5F5F5F), width: 5.0)),
+                      border: Border.all(color: globals.grey, width: 5.0)),
                   child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
@@ -684,7 +673,7 @@ class _ShowPRState extends State<ShowPR> {
                                       style: TextStyle(
                                           fontSize: 40.0,
                                           fontWeight: FontWeight.bold,
-                                          color: Color(0xff1e90ff)),
+                                          color: globals.blue),
                                     ))
                               ],
                             ),
@@ -708,7 +697,7 @@ class _ShowPRState extends State<ShowPR> {
                                       style: TextStyle(
                                           fontSize: 40.0,
                                           fontWeight: FontWeight.bold,
-                                          color: Color(0xff1e90ff)),
+                                          color: globals.blue),
                                     ))
                               ],
                             ),
@@ -724,8 +713,7 @@ class _ShowPRState extends State<ShowPR> {
                     height: 300,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20.0),
-                        border:
-                            Border.all(color: Color(0xff5F5F5F), width: 5.0)),
+                        border: Border.all(color: globals.grey, width: 5.0)),
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -748,12 +736,12 @@ class _ShowPRState extends State<ShowPR> {
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
                                     border: Border.all(
-                                        color: Color(0xff1e90ff), width: 3)),
+                                        color: globals.blue, width: 3)),
                                 child: TextField(
                                   keyboardType: TextInputType.numberWithOptions(
                                       decimal: false, signed: false),
                                   style: TextStyle(
-                                      color: Color(0xff1e90ff), fontSize: 35.0),
+                                      color: globals.blue, fontSize: 35.0),
                                   decoration: InputDecoration(
                                     hintText: 'weight',
                                   ),
@@ -772,12 +760,12 @@ class _ShowPRState extends State<ShowPR> {
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
                                     border: Border.all(
-                                        color: Color(0xff1e90ff), width: 3)),
+                                        color: globals.blue, width: 3)),
                                 child: TextField(
                                   keyboardType: TextInputType.numberWithOptions(
                                       decimal: false, signed: false),
                                   style: TextStyle(
-                                      color: Color(0xff1e90ff), fontSize: 35.0),
+                                      color: globals.blue, fontSize: 35.0),
                                   decoration: InputDecoration(hintText: 'reps'),
                                   onChanged: (String value) {
                                     try {
@@ -824,15 +812,14 @@ class _ShowPRState extends State<ShowPR> {
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(15.0),
                                       border: Border.all(
-                                          color: Color(0xff1e90ff),
-                                          width: 5.0)),
+                                          color: globals.blue, width: 5.0)),
                                   child: Center(
                                     child: Text(
                                       "Update PR",
                                       style: TextStyle(
                                           fontSize: 35.0,
                                           fontWeight: FontWeight.bold,
-                                          color: Color(0xff1e90ff)),
+                                          color: globals.blue),
                                     ),
                                   )))
                         ]),
